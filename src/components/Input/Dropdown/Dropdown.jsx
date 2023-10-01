@@ -1,5 +1,5 @@
 import React from "react";
-import style from '../../userInput/style.module.css';
+import style from "../../userInput/style.module.css";
 
 const Dropdown = (props) => {
   return (
@@ -12,11 +12,12 @@ const Dropdown = (props) => {
         required
       >
         <option value="">{props.sub}</option>
-        {props.options.map((item) => (
-          <option key={item.id} value={item.id}>
-            {item.name}
-          </option>
-        ))}
+        {Array.isArray(props.options) &&
+          props.options.map((item) => (
+            <option key={item.id} value={item.id}>
+              {item.name}
+            </option>
+          ))}
       </select>
     </div>
   );
