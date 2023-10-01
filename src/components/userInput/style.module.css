@@ -1,0 +1,78 @@
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 1rem;
+}
+
+.form-control > label {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.form-control > input, select {
+  border: none;
+  border-bottom: 1.5px solid #0b0b0b;
+  padding: 0.3rem 0.7rem;
+  outline: none;
+  font-size: 14px;
+  color: #3f3d3d;
+}
+
+.form-control > input:focus{
+  border-color: #00dfc4;
+}
+
+.gender, .reason {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  padding: 0.3rem 0.7rem;
+}
+
+input[type="radio"]{
+  width: 15px;
+  height: 15px;
+}
+
+.button {
+  padding: 0.4rem 1rem;
+  width: 80px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  background: #00dfc4;
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.checkbox {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.checkbox > label{
+  font-size: 13px;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  position: relative;
+  top: -13px;
+}
+
+.disable{
+  background: #ccc;
+  cursor: not-allowed;
+}

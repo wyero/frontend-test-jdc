@@ -1,0 +1,36 @@
+.result {
+  background: inherit !important;
+  height: auto !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+  margin: 0.5rem !important;
+}
+
+.result-content, .result-content__image {
+  margin-bottom: 0.5rem;
+}
+
+.result-content > p:first-of-type, .result-content__image {
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+
+.result-content > p:last-of-type {
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.result-content__image > img {
+  width: 100%;
+  border-radius: 3px;
+  object-fit: cover;
+  margin-top: 2px;
+  margin-left: 0.5rem;
+}
+
+.imageKTP {
+  width: 350px !important;
+}
