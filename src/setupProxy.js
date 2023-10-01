@@ -6,7 +6,7 @@ module.exports = function (app) {
     createProxyMiddleware({
       target: "https://www.emsifa.com/api-wilayah-indonesia/api",
       changeOrigin: true,
-      secure: false,
+      secure: true,
       pathRewrite: {
         "^/api": "",
       },
